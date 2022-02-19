@@ -1,0 +1,17 @@
+{
+  "name": "dim-js",
+  "version": "1.0.0",
+  "description": "The Nicer DOM",
+  "main": "./dist/dim.js",
+  "types": "./dist/dim.d.ts",
+  "repository": "https://github.com/merivale/dim-js",
+  "author": "Amyas Merivale",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && esbuild src/dim.ts --bundle --outfile=dist/dim.js --format=esm --target=esnext && esbuild src/dim.ts --bundle --minify --outfile=dist/dim.min.js --format=esm --target=esnext"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.23",
+    "typescript": "^4.5.5"
+  }
+}

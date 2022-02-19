@@ -1,0 +1,10 @@
+import { Attributes } from './attributes';
+import { TagName } from './tagname';
+export declare type Content = Child | Child[];
+export declare type Child = DocumentFragment | HTMLElement | string;
+export declare const createElement: (tagName: TagName, attributes?: Attributes, content?: Content) => HTMLElement;
+export declare const createDocumentFragment: (content?: Content) => DocumentFragment;
+export declare const addAttributes: (element: HTMLElement, attributes: Attributes) => void;
+export declare const appendContent: (element: HTMLElement | DocumentFragment, content?: Content) => void;
+export declare const setAttributes: (element: HTMLElement, attributes?: Attributes) => void;
+export declare const setContent: (element: HTMLElement | DocumentFragment, content?: Content) => void;
